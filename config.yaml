@@ -28,9 +28,40 @@ docusaurus:
   plugin: docusaurus
   options:
     course_name: Hardware Software Interface
+    math: true
     sidebar: js
     structure:
       - Introduction: chapters/landing-page/README.md
+      - Lab 1 - Number Representation:
+          - Binary and Hexadecimal:
+              path: chapters/intro-computer-architecture/binary-hex/
+              extra:
+                - media/
+              subsections:
+                - Reading/: reading/
+                - Drills:
+                    path: drills/
+                    subsections:
+                      - Tasks:
+                          path: tasks/
+                          subsections:
+                            - Conversions/: conversions/
+                            - Rotations/: rotations/
+                            - Binary Even and Hexadecimal Odd/: odd-even/
+          - Pointers in C:
+              path: chapters/memory-layout/c-pointers/
+              extra:
+                - media/
+              subsections:
+                - Reading/: reading/
+                - Drills:
+                    path: drills/
+                    subsections:
+                      - Tasks:
+                          path: tasks/
+                          subsections:
+                            - Length and Equality with Bitwise Operations/: len-xor/
+                            - Mirror/: mirror/
     # static_assets:
     #   - template-chapter-template-topic: /build/make_assets/chapters/template-chapter/template-topic/slides/_site
     config_meta:
