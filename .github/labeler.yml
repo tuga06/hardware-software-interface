@@ -1,8 +1,17 @@
-topic/template-chapter:
-  - chapters/template-chapter/**/*
+topic/hardware-software-interface:
+  - chapters/hardware-software-interface/**/*
 
-topic/another-chapter:
-  - chapters/another-chapter/**/*
+topic/intro-computer-architecture:
+  - chapters/intro-computer-architecture/**/*
+
+topic/memory-layout:
+  - chapters/memory-layout/**/*
+
+topic/memory-security:
+  - chapters/memory-security/**/*
+
+topic/stack:
+  - chapters/stack/**/*
 
 area/reading:
   - '**/reading/*'
@@ -20,9 +29,13 @@ area/guides:
   - '**/guides/*'
   - '**/guides/**/*'
 
-area/drills:
-  - '**/drills/*'
-  - '**/drills/**/*'
+area/tasks:
+  - '**/tasks/*'
+  - '**/tasks/**/*'
+
+area/questions:
+  - '**/questions/*'
+  - '**/questions/**/*'
 
 area/projects:
   - '**/projects/*'
