@@ -72,7 +72,7 @@ docusaurus:
                 - Guides:
                     path: guides/
                     subsections:
-                      - "Array vs. Pointer/": array_vs_pointer/
+                      - Array vs Pointer/: array_vs_pointer/
                 - Drills:
                     path: drills/
                     subsections:
@@ -83,7 +83,7 @@ docusaurus:
                             - Deleting the First Occurrence of a Pattern from a String/: delete_first/
                             - Pixels/: pixels/
                             - Find Maximum in Array/: find_max/
-                            - "Bonus: Pointers/": pointers/
+                            - Bonus - Pointers/: pointers/
           - Introduction to GDB:
               path: chapters/memory-layout/introduction-to-GDB/
               subsections:
@@ -91,7 +91,7 @@ docusaurus:
                 - Guides:
                     path: guides/
                     subsections:
-                      - "GDB Tutorial: Debugging a Segfault/": segfault/
+                      - GDB Tutorial - Debugging a Segfault/: segfault/
                 - Drills:
                     path: drills/
                     subsections:
