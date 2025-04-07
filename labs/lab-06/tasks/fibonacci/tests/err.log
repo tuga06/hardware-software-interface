@@ -1,40 +1,16 @@
-fibo_sum.asm:33: warning: label alone on a line without a colon might be in error [-w+label-orphan]
-fibo_sum.asm:37: warning: label alone on a line without a colon might be in error [-w+label-orphan]
-fibo_sum.asm:37: error: label `check_loop' inconsistently redefined
-fibo_sum.asm:33: info: label `check_loop' originally defined here
-fibo_sum.asm:46: error: label `check_loop' inconsistently redefined
-fibo_sum.asm:37: info: label `check_loop' originally defined here
-make[1]: *** [Makefile:20: fibo_sum.o] Error 1
-rm: cannot remove '*.o': No such file or directory
-rm: cannot remove 'fibo_sum': No such file or directory
-make[1]: *** [Makefile:25: clean] Error 1
-fibo_sum.asm:33: warning: label alone on a line without a colon might be in error [-w+label-orphan]
-fibo_sum.asm:37: warning: label alone on a line without a colon might be in error [-w+label-orphan]
-fibo_sum.asm:37: error: label `check_loop' inconsistently redefined
-fibo_sum.asm:33: info: label `check_loop' originally defined here
-fibo_sum.asm:46: error: label `check_loop' inconsistently redefined
-fibo_sum.asm:37: info: label `check_loop' originally defined here
-make[1]: *** [Makefile:20: fibo_sum.o] Error 1
-rm: cannot remove '*.o': No such file or directory
-rm: cannot remove 'fibo_sum': No such file or directory
-make[1]: *** [Makefile:25: clean] Error 1
-fibo_sum.asm:33: warning: label alone on a line without a colon might be in error [-w+label-orphan]
-fibo_sum.asm:37: warning: label alone on a line without a colon might be in error [-w+label-orphan]
-fibo_sum.asm:37: error: label `check_loop' inconsistently redefined
-fibo_sum.asm:33: info: label `check_loop' originally defined here
-fibo_sum.asm:46: error: label `check_loop' inconsistently redefined
-fibo_sum.asm:37: info: label `check_loop' originally defined here
-make[1]: *** [Makefile:20: fibo_sum.o] Error 1
-rm: cannot remove '*.o': No such file or directory
-rm: cannot remove 'fibo_sum': No such file or directory
-make[1]: *** [Makefile:25: clean] Error 1
-fibo_sum.asm:33: warning: label alone on a line without a colon might be in error [-w+label-orphan]
-fibo_sum.asm:37: warning: label alone on a line without a colon might be in error [-w+label-orphan]
-fibo_sum.asm:37: error: label `check_loop' inconsistently redefined
-fibo_sum.asm:33: info: label `check_loop' originally defined here
-fibo_sum.asm:46: error: label `check_loop' inconsistently redefined
-fibo_sum.asm:37: info: label `check_loop' originally defined here
-make[1]: *** [Makefile:20: fibo_sum.o] Error 1
-rm: cannot remove '*.o': No such file or directory
-rm: cannot remove 'fibo_sum': No such file or directory
-make[1]: *** [Makefile:25: clean] Error 1
+make[1]: Warning: File 'fibo_sum.asm' has modification time 0.043 s in the future
+/usr/bin/ld: warning: fibo_sum.o: missing .note.GNU-stack section implies executable stack
+/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File 'fibo_sum.asm' has modification time 0.035 s in the future
+/usr/bin/ld: warning: fibo_sum.o: missing .note.GNU-stack section implies executable stack
+/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File 'fibo_sum.asm' has modification time 0.026 s in the future
+/usr/bin/ld: warning: fibo_sum.o: missing .note.GNU-stack section implies executable stack
+/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Warning: File 'fibo_sum.asm' has modification time 0.023 s in the future
+/usr/bin/ld: warning: fibo_sum.o: missing .note.GNU-stack section implies executable stack
+/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
