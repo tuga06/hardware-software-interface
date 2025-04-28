@@ -2,6 +2,7 @@
 
 section .data
     mystring db "This is my string", 0
+    formatstring db "String length is %u", 10, 0
 
 section .text
 
@@ -27,6 +28,11 @@ out:
     PRINTF32 `[PRINTF32]: %d\n[printf]: \x0`, ecx
 
     ;  TODO: print string length using printf
+
+    push ecx
+    push formatstring
+    call printf
+    add esp, 8
 
     leave
     ret
