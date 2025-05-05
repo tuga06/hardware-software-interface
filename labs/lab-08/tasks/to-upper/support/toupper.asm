@@ -13,6 +13,16 @@ toupper:
     mov ebp, esp
 
     ; TODO
+    mov eax, [ebp + 8]
+    xor ecx, ecx
+upper:
+    mov bl, byte [eax]
+    test bl, bl
+    je end
+    sub bl, 0x20
+    inc eax
+    jmp upper
+end:
 
     leave
     ret

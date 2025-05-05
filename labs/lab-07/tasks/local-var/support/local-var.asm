@@ -68,6 +68,29 @@ print:
     cmp ecx, ARRAY_OUTPUT_LEN
     jb print
 
+    mov eax, 0
+    mov ebx, 0
+    mov ecx, 0
+first_array:
+    push [array_1 + 4 * eax]
+    inc eax
+    cmp eax, ARRAY_1_LEN
+    je second_array
+    jmp first_array
+second_array:
+    push [array_2 + 4 * ebx]
+    inc ebx
+    cmp ebx, ARRAY_2_LEN
+    je last_array
+    jmp last_array
+last_array:
+    push [array_output + 4 * ecx]
+    inc ecx
+    cmp ecx, ARRAY_OUTPUT_LEN
+    je end
+    jmp last_array
+end:
+
     PRINTF32 `\n\x0`
     xor eax, eax
     ret
