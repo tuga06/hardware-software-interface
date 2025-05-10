@@ -20,6 +20,36 @@ main:
 
     ; Use the loop instruction
 
+    mov ecx, dword[N]
+    xor eax, eax
+    jz fibo_zero
+loop:
+    mov eax, eax
+    jz fibo_one
+    cmp edx, ebx
+    jb pm
+    add eax, edx
+    add ebx, edx
+    check_loop
+pm:
+    add eax, ebx
+    add edx, ebx
+    check_loop
+fibo_zero:
+    mov eax, 0
+    jmp check_loop
+fibo_one:
+    mov ebx, 0
+    mov edx, 1
+    mov eax, 1
+    jmp check_loop
+check_loop:
+    mov ecx, ecx
+    jz end
+    dec ecx
+    jmp loop
+
+end:
     push eax
     push dword [N]
     push sum_print_format

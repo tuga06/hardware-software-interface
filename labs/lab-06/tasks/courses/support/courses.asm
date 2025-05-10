@@ -78,5 +78,34 @@ main:
 	mov ebp, esp
 	PRINTF32 `The students list is:\n\x0`
 	; TODO: Print the list of students and the courses where they are assigned
+
+	xor ecx, ecx
+
+loop:
+	mov ebx, [students + ecx]
+	PRINTF32 `%s ---- \x0`, [ebx + name]
+	mov edx, [ebx + check]
+	jz not_asg
+	mov edx, [ebx + id]
+	jz asm
+	dec edx
+	jz la
+	PRINTF32 `Physics\n\x0`
+	jmp check_loop
+asm:
+	PRINTF32 `Assembly\n\x0`
+	jmp check_loop
+la:
+	PRINTF32 `Linear Algebra\n\x0`
+	jmp check_loop
+not_asg:
+	PRINTF32 'Student unassigned :(\n\x0'
+check_loop:
+	inc ecx
+	cmp ecx, [v_students_count]
+	je end
+	jmp loop
+
+end:
     leave
     ret
