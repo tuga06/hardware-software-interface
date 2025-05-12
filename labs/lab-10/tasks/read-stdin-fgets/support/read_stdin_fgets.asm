@@ -5,11 +5,12 @@
 ; Buffer is stored on the stack.
 
 ; TODO 1: Add missing external declaration for stdin
+extern stdin
 ; TODO 1: Change gets to fgets function.
 extern printf
 extern puts
 extern strlen
-extern gets
+extern fgets
 
 
 section .data
@@ -18,6 +19,7 @@ section .data
     byte_format: db " %02X(%c)", 0
     null_string: db 0
     var_message_and_format: db "var is 0x%08X", 13, 10, 0
+    buffer_length: db 1
 
 section .text
 
@@ -48,8 +50,10 @@ main:
     ; TODO 2: Call fgets function instead of gets.
     ; HINT: fgets takes 3 arguments: buffer address, buffer size, and stdin.
     ; IMPORTANT: remember the order of arguments that have to be pushed.
+    push stdin
+    push buffer_length
     push ebx
-    call gets
+    call fgets
     add esp, 4
 
     ; Push string length on the stack.
