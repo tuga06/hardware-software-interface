@@ -1,8 +1,5 @@
 ; SPDX-License-Identifier: BSD-3-Clause
 
-section .data
-	pos: dd 0
-
 section .text
 
 global get_max
