@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: BSD-3-Clause
 
+extern int qty;
+
 int main(void)
 {
 	/*
@@ -9,5 +11,9 @@ int main(void)
 	 * without directly calling a printing function.
 	 */
 
+	qty = 42;
+	set_price(21);
+	print_price();
+	print_quantity();
 	return 0;
 }
