@@ -5,9 +5,13 @@
 
 // Function used to validate the result.
 extern void check_result(void);
+extern int age;
 
 int main(void)
 {
+	set(10);
+	age = 33;
+
 	check_result();
 
 	return 0;
